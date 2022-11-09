@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+body {
+  background-color: burlywood;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -22,6 +26,31 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.heading {
+  background-color: slategray;
+  color: wheat;
+  height: 50px;
+  margin-top: -0.5%;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image1 {
+  background-color: red;
+  height: 100px;
+}
+
+.payBtn {
+  margin-top: 3em;
+  padding-left: 5em;
+  padding-right: 5em;
 }
 
 .App-link {
