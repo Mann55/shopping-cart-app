@@ -1,0 +1,11 @@
+.wrapper{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: lightblue;
+}
+
+.title{
+    text-align: center;
+}

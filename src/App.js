@@ -1,31 +1,35 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Products from "./components/Products";
+import ProductList from './components/ProductsList';
+
+const products = [
+  {
+    id: 1,
+    name: 'jacket',
+    price: 20,
+    color: 'white',
+    picture: '/assets/images/image1.jpg',
+  },
+  {
+    id: 2,
+    name: 'jeansJacket',
+    price: 60,
+    color: 'light-blue',
+    picture: '/assets/images/image2.jpg',
+  },
+  {
+    id: 3,
+    name: 'blackShirt',
+    price: 30,
+    color: 'black',
+    picture: '/assets/images/image3.jpg',
+  },
+
+];
 
 function App() {
-  const productDetails = [
-    {
-      productName: "jacket",
-      price: "20€",
-      color: "white",
-    },
-    {
-      productName: "jeansJacket",
-      price: "60€",
-      color: "light-blue",
-    },
-    {
-      productName: "blackShirt",
-      price: "30€",
-      color: "black",
-    },
-  ];
-
   return (
-    <div className="App">
-      <h2 className="heading">Clothing Shopping App</h2>
-      <Products />
-    </div>
+    <>
+      <ProductList products={products} />
+    </>
   );
 }
 
